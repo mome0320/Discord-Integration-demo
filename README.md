@@ -34,4 +34,9 @@ npm install
 // Before You start Application, Edit ./config.json  
 
 node .
-```  
+```
+
+### Warning
+
+> Grant Permission applications.commands
+> <https://discord.com/oauth2/authorize?client_id={id}&scope=applications.commands>
