@@ -40,6 +40,6 @@ node .
 ### Warning
 
 > Grant Permission applications.commands  
-> (if you don't It will throw DiscordAPIError when CommandRegister.(Missing Access))  
+> (if you don't grant permission, It will throw DiscordAPIError (Missing Access) when Execute CommandRegister Function.)  
 > 
 > `https://discord.com/oauth2/authorize?client_id={insert_client_id_here}&scope=applications.commands`
