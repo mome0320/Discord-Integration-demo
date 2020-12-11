@@ -5,7 +5,7 @@ This Project is Discord Slash Command Demo
 [Discord-api-docs PR](https://github.com/discord/discord-api-docs/pull/2295) will be merged.  
 This Project hook `raw` Event. so It will be operated successfully If user enter slash command.  
 
-Base in D.js V12.
+Base in Discord.js V12.
 
 ## Warning
 
