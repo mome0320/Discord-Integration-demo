@@ -1,0 +1,22 @@
+{
+  "name": "discord-integration-demo",
+  "version": "1.0.0",
+  "description": "Discord SlashCommand Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoartMedia/Discord-Integration-demo.git"
+  },
+  "author": "MoartMedia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MoartMedia/Discord-Integration-demo/issues"
+  },
+  "homepage": "https://github.com/MoartMedia/Discord-Integration-demo#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
