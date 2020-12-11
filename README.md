@@ -14,7 +14,8 @@
 
 ### Install Node.js
 
-> [Download For Windows / MacOS](https://nodejs.org/en/download/)
+> [Download For Windows / MacOS](https://nodejs.org/en/download/)  
+>
 > Download For Linux Using apt
 >
 > ```bash
@@ -38,5 +39,7 @@ node .
 
 ### Warning
 
-> Grant Permission applications.commands
-> <https://discord.com/oauth2/authorize?client_id={id}&scope=applications.commands>
+> Grant Permission applications.commands  
+> (if you don't It will throw DiscordAPIError when CommandRegister.(Missing Access))  
+> 
+> `https://discord.com/oauth2/authorize?client_id={insert_client_id_here}&scope=applications.commands`
