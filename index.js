@@ -29,10 +29,10 @@ const CommandData = data.data;
 
         if(TargetUser){
             const user = client.users.cache.get(TargetUser.value);
-            channel.send(`${user}님 안녕하세요!`,{allowedMentions:{parse:[]}});
+            callback(data,`${user}님 안녕하세요!`);
 
         }else{
-            channel.send('안녕하세요!',{allowedMentions:{parse:[]}});
+            callback(data,`안녕하세요!`);
         }
     }
 })
@@ -63,4 +63,16 @@ function registerSlashCommands(guild){
     data.options.push(option);
 
     client.api.applications(client.user.id).guilds(guild.id).commands().post({data});
+}
+function callback(oridata,message){
+   const data = {
+        "type": 4,
+        "data": {
+            "tts": false,
+            "content": message,
+            "embeds": [],
+            "allowed_mentions": []
+        }
+    }
+    client.api.interactions(oridata.id)[oridata.token].callback().post({data});
 }
