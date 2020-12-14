@@ -1,4 +1,20 @@
-# DISCORD SLASH COMMAND DEMO
+# Discord Slash Command Demo
+
+## About
+This Project is Discord Slash Command Demo  
+Reference. [Discord-api-docs PR](https://github.com/discord/discord-api-docs/pull/2295)  
+
+This Project hook `raw` Event. so It will be operated successfully If user enter slash command.  
+
+Base in Discord.js V12.
+
+## Warning
+
+Grant Permission applications.commands  
+`https://discord.com/oauth2/authorize?client_id={insert_client_id_here}&scope=applications.commands`  
+
+If you don't grant permission,  
+It will throw DiscordAPIError (Missing Access) when you execute CommandRegister Function.
 
 ## Installation
 
@@ -23,23 +39,15 @@
 > apt-get install nodejs -y
 > ```
 
-### Setup Dependencies
+## Setup Dependencies
 
 ```bash
 npm install
 ```  
 
-### Start Application
+## Start Application
+Before You start Application, Please Edit ./config.json.  
 
 ```bash
-// Before You start Application, Edit ./config.json  
-
 node .
 ```
-
-### Warning
-
-> Grant Permission applications.commands  
-> (if you don't It will throw DiscordAPIError when CommandRegister.(Missing Access))  
-> 
-> `https://discord.com/oauth2/authorize?client_id={insert_client_id_here}&scope=applications.commands`
